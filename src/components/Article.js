@@ -1,12 +1,13 @@
 import React from "react";
 
 function Article({
-    title,
-    preview,
-    date = "January 1, 1970"
+    article,
+    title=article.title,
+    date="January 1, 1970",
+    preview=article.preview
 })
 {
-    console.log(title)
+    console.log(article)
     return(
         <article>
             <h3>{title}</h3>
