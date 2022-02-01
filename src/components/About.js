@@ -1,10 +1,13 @@
 import React from "react";
 
-function About(props){
+function About({
+    image = "https://via.placeholder.com/215",
+    about
+}){
     return(
        <aside>
-           <img src={props.image} placeholder="https://via.placeholder.com/215" alt="blog logo"/>
-           <p about={props.about}>{props.about}</p>
+           <img src={image} alt="blog logo"/>
+           <p about={about}>{about}</p>
        </aside> 
     )
 }
